@@ -126,6 +126,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  font-family: 'Roboto';
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
 header {
   display: flex;
   background-color: #FDFED2;
@@ -177,7 +182,7 @@ header nav a {
   padding-top: 20px;
   padding-bottom: 10px;
   width: 100%;
-  font-size: xx-large;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   border-bottom: #FFC108 solid 3px;
   text-align: center;
@@ -243,7 +248,7 @@ header nav a {
   padding-top: 20px;
   padding-bottom: 10px;
   width: 100%;
-  font-size: xx-large;
+  font-size: 2.5rem;
   margin-bottom: 20px;
   border-bottom: #FFC108 solid 3px;
   text-align: center;
@@ -335,5 +340,100 @@ header nav a {
 }
 .container .bottom h2 {
   text-align: center;
-  font-size: xx-large;
+  font-size: 2.5rem;
+}
+body {
+  font-family: 'Roboto';
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.about {
+  width: 100%;
+}
+.about h1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  border-bottom: #FFC108 solid 3px;
+  text-align: center;
+}
+.about p {
+  text-align: center;
+}
+.container .meetmebers {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 800px) {
+  .container .meetmebers {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.container .meetmebers .meet-left .above-me {
+  display: flex;
+}
+.container .meetmebers .meet-left .above-me .person {
+  width: 210px;
+  height: 210px;
+  padding: 10px;
+}
+.container .meetmebers .meet-left .below-me {
+  display: flex;
+}
+.container .meetmebers .meet-left .below-me .person {
+  width: 210px;
+  height: 210px;
+  padding: 10px;
+}
+.container .meetmebers .meet-right h1 {
+  font-size: 1.6rem;
+}
+.container .meetmebers .meet-right P {
+  padding: 20px;
+  font-size: 1rem;
+  text-decoration: dotted;
+}
+.container .swing img {
+  width: 100%;
+  height: 250px;
+  border: #ED0A77 solid 2px;
+  object-fit: cover;
+}
+.container .meb h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 30px;
+  border-bottom: #FFC108 solid 4px;
+  padding-bottom: 10px;
+}
+.container .meb .flexplace {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .container .meb .flexplace {
+    flex-direction: column;
+  }
+}
+.container .meb .flexplace p {
+  width: 33%;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  .container .meb .flexplace p {
+    width: 90%;
+  }
+}
+.container .bottom1 {
+  background-color: #FDFED2;
+  padding: 80px;
+  margin-top: 30px;
+}
+.container .bottom1 h2 {
+  text-align: center;
+  font-size: 2.5rem;
 }
