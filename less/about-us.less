@@ -1,0 +1,115 @@
+body{
+    font-family: @font ;
+    font-size: .9rem; 
+    line-height: 1.4;
+    }
+.about{
+    .text();
+ 
+}
+
+.container{
+    .about{
+
+   
+    }
+    .meetmebers{
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-around;
+                    @media @tablet{
+                        flex-direction: column;
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+        .meet-left{
+
+            .above-me{
+                display: flex;
+                .person{
+                    width: 210px;
+                    height: 210px;
+                    padding: 10px;
+                    
+
+                }
+            
+            
+            }
+            .below-me{
+                display: flex;
+               .person{ 
+                width: 210px;
+                height: 210px;
+                padding: 10px;
+              
+
+            }
+            }
+        }
+    
+        .meet-right{
+            h1{
+                font-size: 1.6rem;
+            }
+            P{
+                padding: 20px;
+                font-size: 1rem;
+                text-decoration: dotted;
+            }
+        }
+    
+    
+    
+    
+    }
+
+.swing{
+   
+    
+    
+
+    img{
+         width: 100%;
+         height: 250px;
+         border: @pink solid 2px;
+         object-fit: cover;
+    }
+}
+
+
+
+
+.meb{
+        h2{
+        font-size: 2.5rem;
+        text-align: center;
+        padding-top: 30px;
+        border-bottom: @yellow solid  4px;
+        padding-bottom: 10px;
+    }
+    .flexplace{
+       display: flex; 
+       @media @phone{
+      flex-direction: column;
+      
+    }
+    p{
+        width: 33%;
+        padding: 20px;
+        @media @phone{width: 90%;}
+    }
+}
+}
+.bottom1{
+    background-color: @off-white;
+    padding: 80px;
+    margin-top: 30px;
+    h2{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+
+}
+}

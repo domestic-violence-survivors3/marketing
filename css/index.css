@@ -1,0 +1,439 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font-family: 'Roboto';
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+header {
+  display: flex;
+  background-color: #FDFED2;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+}
+header .logo {
+  width: 110px;
+  height: 110px;
+  padding-right: 90px;
+}
+@media (max-width: 500px) {
+  header .logo {
+    width: 80%;
+    height: 50%;
+    padding-right: 0px;
+    padding-left: 50px;
+  }
+}
+header nav {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  header nav {
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+}
+header nav a {
+  color: black;
+  text-decoration: none;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container .toptext {
+  width: 100%;
+}
+.container .toptext h1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  border-bottom: #FFC108 solid 3px;
+  text-align: center;
+}
+.container .toptext p {
+  text-align: center;
+}
+.container .lone {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  border-top: #4A2F8D dashed 3px;
+  border-bottom: #4A2F8D dashed 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width: 800px) {
+  .container .lone {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .lone img {
+  width: 320px;
+  height: 220px;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .container .lone img {
+    width: 100%;
+    height: 200%;
+  }
+}
+.container .lone p {
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 50%;
+  height: 220px;
+}
+@media (max-width: 500px) {
+  .container .lone p {
+    width: 93%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .container .lone p {
+    width: 90%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .container .lone {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.container .middletext {
+  width: 100%;
+}
+.container .middletext h1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  border-bottom: #FFC108 solid 3px;
+  text-align: center;
+}
+.container .middletext p {
+  text-align: center;
+}
+.container .scre {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  border-top: #4A2F8D dashed 3px;
+  border-bottom: #4A2F8D dashed 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width: 800px) {
+  .container .scre {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container .scre img {
+  width: 320px;
+  height: 220px;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .container .scre img {
+    width: 100%;
+    height: 200%;
+  }
+}
+.container .scre p {
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 50%;
+  height: 220px;
+}
+@media (max-width: 500px) {
+  .container .scre p {
+    width: 93%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .container .scre p {
+    width: 90%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .container .scre {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .container .scre {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 800px) {
+  .container .scre {
+    flex-direction: column-reverse;
+  }
+}
+.container .you {
+  display: flex;
+  justify-content: center;
+}
+.container .you img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 20px;
+  border: #8AC748 solid 4px;
+}
+@media (max-width: 500px) {
+  .container .you img {
+    width: 96%;
+  }
+}
+.container .bottom {
+  background-color: #FDFED2;
+  padding: 80px;
+  margin-top: 30px;
+}
+.container .bottom h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+body {
+  font-family: 'Roboto';
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.about {
+  width: 100%;
+}
+.about h1 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  border-bottom: #FFC108 solid 3px;
+  text-align: center;
+}
+.about p {
+  text-align: center;
+}
+.container .meetmebers {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 800px) {
+  .container .meetmebers {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.container .meetmebers .meet-left .above-me {
+  display: flex;
+}
+.container .meetmebers .meet-left .above-me .person {
+  width: 210px;
+  height: 210px;
+  padding: 10px;
+}
+.container .meetmebers .meet-left .below-me {
+  display: flex;
+}
+.container .meetmebers .meet-left .below-me .person {
+  width: 210px;
+  height: 210px;
+  padding: 10px;
+}
+.container .meetmebers .meet-right h1 {
+  font-size: 1.6rem;
+}
+.container .meetmebers .meet-right P {
+  padding: 20px;
+  font-size: 1rem;
+  text-decoration: dotted;
+}
+.container .swing img {
+  width: 100%;
+  height: 250px;
+  border: #ED0A77 solid 2px;
+  object-fit: cover;
+}
+.container .meb h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 30px;
+  border-bottom: #FFC108 solid 4px;
+  padding-bottom: 10px;
+}
+.container .meb .flexplace {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .container .meb .flexplace {
+    flex-direction: column;
+  }
+}
+.container .meb .flexplace p {
+  width: 33%;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  .container .meb .flexplace p {
+    width: 90%;
+  }
+}
+.container .bottom1 {
+  background-color: #FDFED2;
+  padding: 80px;
+  margin-top: 30px;
+}
+.container .bottom1 h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
