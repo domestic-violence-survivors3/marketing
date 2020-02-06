@@ -87,20 +87,34 @@ body{
         padding-top: 30px;
         border-bottom: @yellow solid  4px;
         padding-bottom: 10px;
+       
     }
-    .flexplace{
-       display: flex; 
-       @media @phone{
-      flex-direction: column;
-      
+
+        
+        .flexplace{
+    display: flex;
+
+    justify-content: space-evenly;
+ 
+    .box{  
+
+padding-top: 20px;
+padding-bottom: 20px;
+width: 33%;
+
+        p{
+
+text-align: center;
+height: 20px;
+font-weight: 900;
+        }
     }
-    p{
-        width: 33%;
-        padding: 20px;
-        @media @phone{width: 90%;}
-    }
+
 }
+
 }
+
+
 .bottom1{
     background-color: @off-white;
     padding: 80px;
@@ -109,7 +123,19 @@ body{
         text-align: center;
         font-size: 2.5rem;
     }
+    .social{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 30px;
+        a{
+            color: black;
+            text-decoration: none;
+            font-size: 1.3rem;
+            @media @phone{
+font-size: .9rem;
+            }
+        }
 
-
+}
 }
 }
