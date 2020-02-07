@@ -10,13 +10,18 @@ body{
 
 .container{
     .about{
-
+padding-bottom: 30px;
    
     }
     .meetmebers{
         padding-top: 30px;
         display: flex;
         justify-content: space-around;
+        img{ width: 440px;
+            height: 440px;
+      //  padding-left: 130px;
+      padding: 10px;
+    }
                     @media @tablet{
                         flex-direction: column;
                 flex-direction: column-reverse;
@@ -48,7 +53,13 @@ body{
             }
         }
     
-        .meet-right{
+        .meet-right{ @media @tablet{display: flex;
+        flex-direction: column-reverse;
+        
+        }
+        text-align: center;
+        
+           .list{padding-top: 40px;
             h1{
                 font-size: 1.6rem;
             }
@@ -57,6 +68,7 @@ body{
                 font-size: 1rem;
                 text-decoration: dotted;
             }
+        }
         }
     
     
@@ -128,12 +140,16 @@ font-weight: 900;
         justify-content: space-evenly;
         padding-top: 30px;
         a{
+            img{ width: 65px;
+            height: 65px;}
+           
             color: black;
             text-decoration: none;
             font-size: 1.3rem;
             @media @phone{
 font-size: .9rem;
-            }
+            } 
+
         }
 
 }

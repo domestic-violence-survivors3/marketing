@@ -133,7 +133,7 @@ body {
 }
 header {
   display: flex;
-  background-color: #FDFED2;
+  background-color: #fdfed2;
   justify-content: space-evenly;
 }
 @media (max-width: 500px) {
@@ -334,7 +334,7 @@ header nav a {
   }
 }
 .container .bottom {
-  background-color: #FDFED2;
+  background-color: #fdfed2;
   padding: 80px;
   margin-top: 30px;
 }
@@ -351,6 +351,10 @@ header nav a {
   color: black;
   text-decoration: none;
   font-size: 1.3rem;
+}
+.container .bottom .social a img {
+  width: 65px;
+  height: 65px;
 }
 @media (max-width: 500px) {
   .container .bottom .social a {
@@ -377,10 +381,18 @@ body {
 .about p {
   text-align: center;
 }
+.container .about {
+  padding-bottom: 30px;
+}
 .container .meetmebers {
   padding-top: 30px;
   display: flex;
   justify-content: space-around;
+}
+.container .meetmebers img {
+  width: 440px;
+  height: 440px;
+  padding: 10px;
 }
 @media (max-width: 800px) {
   .container .meetmebers {
@@ -405,10 +417,22 @@ body {
   height: 210px;
   padding: 10px;
 }
-.container .meetmebers .meet-right h1 {
+.container .meetmebers .meet-right {
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .container .meetmebers .meet-right {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.container .meetmebers .meet-right .list {
+  padding-top: 40px;
+}
+.container .meetmebers .meet-right .list h1 {
   font-size: 1.6rem;
 }
-.container .meetmebers .meet-right P {
+.container .meetmebers .meet-right .list P {
   padding: 20px;
   font-size: 1rem;
   text-decoration: dotted;
@@ -441,7 +465,7 @@ body {
   font-weight: 900;
 }
 .container .bottom1 {
-  background-color: #FDFED2;
+  background-color: #fdfed2;
   padding: 80px;
   margin-top: 30px;
 }
@@ -458,6 +482,10 @@ body {
   color: black;
   text-decoration: none;
   font-size: 1.3rem;
+}
+.container .bottom1 .social a img {
+  width: 65px;
+  height: 65px;
 }
 @media (max-width: 500px) {
   .container .bottom1 .social a {
